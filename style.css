@@ -29,6 +29,7 @@ body{
     font-family: 'Courier New', Courier, monospace;
     padding: 10px 10px;
     border-radius: 15px;
+    
 
 }
 
@@ -46,26 +47,27 @@ body{
 
 .card #cardNumber{
     position: relative;
-    top: 18%;
-    left: -10%;
+    left: 4%;
     background: none;
     width: 400px;
     height: 40px;
     color: goldenrod;
     font-weight: bolder;
     font-size: 35px;
+    padding: 0 10px;
 
 }
 .card .date{
     position: relative;
-    top: 22%;
+    top: 12%;
     left: 30%;
+    
 }
 .card .date span {
     color: white;
 
 }
-.card .date input {
+.card .date #validDate {
     position: relative;
     bottom: 33px;
     left: 12%;
@@ -73,19 +75,25 @@ body{
     color: goldenrod;
     font-size: 20px;
     width: 50px;
+    height: 30px;
+
+    padding: 0 10px;
 
 }
 
 .card #name {
     position: relative;
-    top: 18%;
-    left: 5%;
+    top: 20px;
+    left: 4%;
     background: none;
-    width: 250px;
+    width: 400px;
     height: 25px;
     color: goldenrod;
     font-weight: bolder;
-    font-size: 35px;
+    font-size: 30px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    
 
 }
 
