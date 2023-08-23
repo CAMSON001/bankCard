@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App </title>
+    <title>BANK CARD </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body >
     <div class="container">
         <div class="card">
             <div class="title">
-                <h1>BANK CARD</h1>
+                <h1 style="color: white;">BANK CARD</h1>
             </div>
-            <img src="./puce.jpeg" alt="puce">
+            <img src="./puce.jpeg" alt="puce" class="imgRecto">
+            <div class="forVerso">
+                <img src="./bgforib.png" alt="">
+                <div class="ribPlace"></div>
+                <span id="signature" style="color: white;">signature du <br> titulaire obligatoire</br> </span>
+            </div>
+            
             <div id="cardNumber"></div> 
             <div class="date">
                 <span>VALID <br>THRU</br></span>
@@ -30,6 +36,7 @@
             <input type="text" id="ribBox" placeholder="RIB">
 
         </div>
+        <hr style="position: relative; top: 20px;">
 
     </div>
    

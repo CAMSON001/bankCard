@@ -19,30 +19,97 @@ body{
     height: 330px;
 }
 
+/* jdhfjhfjh */
+.forVerso{
+    display: none;
+    position: relative;
+    bottom: 50px; 
+    transform: rotateY(180deg);
+}
+
+
+
+.forVerso .ribPlace{
+    position: relative;
+    
+    border: 1px black solid ;
+    color: white;
+    width: 100px;
+    height: 40px;
+    left: -13%;
+    padding: 0px 5px;
+    
+}
+
+
+.forVerso.active {
+    position: relative;
+    top: 50px; 
+    left: -20px;
+    display: flex;
+
+}
+.forVerso.active img{
+    position: relative;
+    width: 200px;
+    margin-right: 5%;
+}
+
+.forVerso.active .ribPlace{
+    position: relative;
+    border: none;
+    top: 15px;
+    left: -200px;
+    padding: 0px 5px;
+    font-size: 20px;
+
+}
+.forVerso.active span{
+    position: relative;
+    right: 80px;
+}
 .card{
 
     width: 500px;
     height: 300px;
-    background-image: url("bgrecto.jpeg");
+    background-image: url("bgverso.jpeg");
     background-size: cover;
     display: block;
     font-family: 'Courier New', Courier, monospace;
     padding: 10px 10px;
     border-radius: 15px;
-    
+    transition: transform 0.7s ease-out;
 
 }
 
-.card h1{
+/* jdhfjhfjh */
+.card.active{
+    transform: rotateY(180deg);
+    background-image: url("bgrecto.jpeg");
+    background-size: cover;
+
+}
+
+
+
+
+/* jdhfjhfjh */
+.card .title{
     color: white;
     margin-left: 30px;
 }
-
-.card img{
+.card .title.active{
+  display: none;
+}
+.card .imgRecto{
     position: relative ;
     left: 6%;
     width: 70px;
    border-radius: 5px;
+}
+/* jdhfjhfjh */
+.card .imgRecto.active{
+    display: none;
 }
 
 .card #cardNumber{
@@ -57,11 +124,22 @@ body{
     padding: 0 10px;
 
 }
+
+.card #cardNumber.active{
+    display: none;
+}
+
+/* jdhfjhfjh */
 .card .date{
     position: relative;
     top: 12%;
     left: 30%;
     
+}
+
+
+.card .date.active{
+    display: none;
 }
 .card .date span {
     color: white;
@@ -81,6 +159,10 @@ body{
 
 }
 
+.card .date #validDate.active{
+    display: none;
+}
+
 .card #name {
     position: relative;
     top: 20px;
@@ -95,6 +177,10 @@ body{
     text-transform: uppercase;
     
 
+}
+
+.card #name.active{
+    display: none;
 }
 
 .container button{
