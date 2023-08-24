@@ -85,7 +85,12 @@ newCardBtn.addEventListener('click', ()=>{
 })
 
 CardGrab.addEventListener('input', ()=>{
-    cardNumber.innerText = CardGrab.value
+    const chaine =  CardGrab.value 
+    const part1 = chaine.slice(0, 4);
+    const part2 = chaine.slice(4, 8);
+    const part3 = chaine.slice(8, 12);
+    const part4 = chaine.slice(12, 16);
+    cardNumber.innerText = part1 + " " + part2 + " " + part3 + " " + part4 
 
 })
 
